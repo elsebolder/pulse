@@ -31,7 +31,7 @@ Tidied up inefficiencies since the last version.
 
 
 //  VARIABLES
-int pulsePin = A11;                 // Pulse Sensor purple wire connected to analog pin 0
+int pulsePin = A0;                 // Pulse Sensor purple wire connected to analog pin 0
 int blinkPin = 13;                // pin to blink led at each beat
 int fadePin = 5;                  // pin to do fancy classy fading blink at each beat
 int fadeRate = 0;                 // used to fade LED on with PWM on fadePin
@@ -83,10 +83,3 @@ void sendDataToProcessing(char symbol, int data ){
     Serial.print(symbol);                // symbol prefix tells Processing what type of data is coming
     Serial.println(data);                // the data to send culminating in a carriage return
   }
-
-
-
-
-
-
-
